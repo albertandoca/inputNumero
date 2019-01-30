@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css" />
+</head>
+<body>
+    <div class="caja">
+        <div class="titulo">
+            <h2>TRABAJO PARCIAL II</h2>
+        </div>
+        <div class="ingreso">
+            <label for="numeroIngesado">Ingrese un número: </label>
+            <input type="number" id="numeroIngresado" name="numeroIngresado" required="true">
+            <div class="botones">
+                <button onclick="calcular();">Calcular</button>
+            </div>
+            <div class="resultado" style="display: none">
+                <div class="elementos">
+                    <label for="elementosArray"> Los elementos random del array son: </label>
+                    <input type="text" name="elementosArray" id="elementosArray">
+                </div>
+                <div class="sumaTotal">
+                    <label for="sumaTotal">La suma total es: </label>
+                    <input type="text" name="sumaTotal" id="sumaTotal">
+                </div>
+                <div class="promedioTotal">
+                        <label for="promedioTotal">La suma total es: </label>
+                        <input type="text" name="promedioTotal" id="promedioTotal">
+                </div>
+                <div class="botones">
+                        <button onclick="pares();">Calcular pares</button>
+                        <button onclick="impares();">Calcular impares</button>
+                </div>
+                <div class="pares" style="display: none">
+                    <!-- Coloca aquí los label e input para pares-->
+                </div>
+                <div class="impares" style="display: none">
+                    <!-- Coloca aquí los label e input para impares-->
+                </div>
+                <!-- Agrega un div que tenga un boton para volver a displey none todo el resultado, pares e impares-->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/numero.js"></script>
+</body>
+</html>
